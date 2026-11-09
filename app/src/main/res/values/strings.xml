@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">PSS</string>
+    <string name="clave_sitio">6LdIIxUuAAAAAAQpuuOAJZvNAzgiDJPG_KLXbOr3</string>
+    <string name="terminosYcondiciones">Los presentes Términos y Condiciones regulan el acceso y uso de la aplicación [Nombre de la Aplicación] (en adelante, "la Aplicación"), propiedad de [Nombre de la Empresa, Entidad o Desarrollador] (en adelante, "el Titular").
+
+Al registrarse, acceder o utilizar la Aplicación, el usuario (en adelante, "el Usuario") acepta de manera expresa, plena y sin reservas la totalidad de las cláusulas contenidas en este documento. Si el Usuario no está de acuerdo con estos términos, deberá abstenerse de utilizar la Aplicación.
+
+1. Datos Personales Recabados
+Para el funcionamiento, verificación de identidad y prestación del servicio de la Aplicación, se solicitarán y procesarán los siguientes datos personales:
+
+Nombres y apellidos completos.
+
+Fotografía/imagen digitalizada del Documento Único de Identidad (DUI).
+
+Número de teléfono.
+
+Dirección de correo electrónico.
+
+Departamento de residencia.
+
+El Usuario garantiza que los datos proporcionados son exactos, veraces, vigentes y que le pertenecen legítimamente.
+
+2. Finalidad del Tratamiento de Datos
+Los datos recabados serán utilizados exclusivamente para los siguientes fines:
+
+Verificación de Identidad: Validar la identidad del Usuario mediante la revisión de la imagen del DUI y cotejo de datos personales para prevenir fraudes, suplantaciones de identidad o usos indebidos.
+
+Gestión de Cuenta y Comunicación: Facilitar el acceso a la plataforma, enviar notificaciones relativas al servicio, verificaciones de seguridad vía SMS/correo electrónico y atender solicitudes de soporte.
+
+Regionalización del Servicio: Adaptar las funcionalidades, servicios o cobertura de la Aplicación según el departamento de residencia informado.
+
+Cumplimiento Legal: Atender requerimientos de autoridades competentes en conformidad con la legislación aplicable en la República de El Salvador.
+
+3. Protección de Datos y Confidencialidad
+El Titular se compromete a tratar los datos personales del Usuario bajo estrictos estándares de seguridad técnica, administrativa y organizativa para evitar la alteración, pérdida, acceso no autorizado o tratamiento indebido de la información.
+
+La imagen del DUI y los datos sensibles recolectados no serán vendidos, alquilados ni transferidos a terceros con fines comerciales o publicitarios sin el consentimiento previo y explícito del Usuario.
+
+Los datos podrán ser compartidos con proveedores de servicios de infraestructura tecnológica o verificación (encargados del tratamiento) bajo contratos que garanticen los mismos niveles de confidencialidad y seguridad.
+
+4. Uso Aceptable de la Aplicación
+El Usuario se obliga a hacer un uso adecuado de la Aplicación y a no realizar ninguna de las siguientes acciones:
+
+Subir o registrar imágenes de documentos de identidad pertenecientes a terceros o documentos alterados/falsificados.
+
+Utilizar la plataforma con fines ilícitos, fraudulentos o lesivos de los derechos de terceros.
+
+Intentar vulnerar la seguridad, realizar ingeniería inversa o interrumpir el correcto funcionamiento de los sistemas informáticos de la Aplicación.
+
+El Titular se reserva el derecho de suspender o cancelar de forma inmediata y sin previo aviso la cuenta de cualquier Usuario que infrinja estas disposiciones.
+
+5. Propiedad Intelectual
+Todos los derechos de propiedad intelectual sobre el código fuente, diseño de interfaz, marcas, logotipos, textos, gráficos y demás contenidos de la Aplicación son propiedad exclusiva del Titular o de sus licenciantes. Queda prohibida su reproducción, distribución o modificación sin autorización previa y por escrito.
+
+6. Limitación de Responsabilidad
+La Aplicación se proporciona "tal cual" y "según disponibilidad". El Titular no garantiza la disponibilidad ininterrumpida o libre de errores del servicio, aunque ejecutará las medidas razonables para mantener su estabilidad y corregir fallas a la brevedad posible.
+
+El Titular no será responsable por daños derivados de uso indebido de las credenciales de acceso por parte del Usuario o por la introducción de datos falsos al momento del registro.
+
+7. Modificaciones a los Términos y Condiciones
+El Titular se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Dichas modificaciones entrarán en vigor a partir de su publicación en la Aplicación o su notificación vía correo electrónico. El uso continuado de la Aplicación tras la publicación de los cambios constituye la aceptación implícita de los nuevos términos.
+
+8. Legislación Aplicable y Jurisdicción
+Los presentes Términos y Condiciones se rigen e interpretan de acuerdo con las leyes de la República de El Salvador. Cualquier controversia, reclamo o disputa derivada de la interpretación o cumplimiento del presente documento será sometida a la jurisdicción de los tribunales competentes de la ciudad de [Ciudad, ej. San Salvador], El Salvador.
+
+9. Contacto
+Para ejercer sus derechos de acceso, rectificación, cancelación u oposición de datos (ARCO), o para formular cualquier duda respecto a estos Términos, el Usuario puede ponerse en contacto a través de:
+
+Correo electrónico de soporte: [soporte@pss.com]
+
+Teléfono/Atención: [+503 7777-7777]
+    </string>
+
+    <string name="declaracionVerdad">
+        Al completar el registro y presionar el botón de [Aceptar / Continuar / Registrarse /Registrar usuario], el Usuario declara de forma consciente, voluntaria y bajo su absoluta responsabilidad lo siguiente:
+
+1. Veracidad y Titularidad de la Información
+Identidad y Documentación: Declaro que la imagen del Documento Único de Identidad (DUI) adjuntada en esta plataforma es original, vigente y corresponde fiel e íntegramente a mi persona.
+
+Exactitud de los Datos: Afirmo que los nombres, apellidos, número de teléfono, correo electrónico y departamento de residencia ingresados son auténticos, exactos, completos y se encuentran vigentes a la fecha de registro.
+
+Prohibición de Identidad de Terceros: Confirmo que no estoy haciendo uso de información, números telefónicos, direcciones de correo ni documentos de identidad pertenecientes a terceros, ni haciendo uso de documentos alterados, digitales manipulados o falsificados.
+
+2. Responsabilidad por Información Falsa
+Entiendo y acepto que el suministro de información falsa, inexacta, desactualizada o la suplantación de la identidad de un tercero constituye una violación grave a las condiciones de uso de la Aplicación. El Titular se reserva el derecho de:
+
+Inhabilitar, suspender o cancelar de forma definitiva mi cuenta de usuario sin previo aviso.
+
+Denegar de manera permanente el acceso a los servicios de la plataforma.
+
+Entregar la información recabada a las autoridades administrativas y judiciales competentes en la República de El Salvador en caso de detectarse indicios de fraude, suplantación de identidad o comisión de ilícitos.
+
+3. Autorización de Verificación y Tratamiento
+Autorizo de manera explícita al Titular (o a los encargados del tratamiento que este designe) a procesar mis datos personales y la imagen de mi DUI con la única finalidad de validar mi identidad, verificar la coincidencia de los datos declarados y gestionar mi cuenta en la Aplicación, de conformidad con la política de privacidad de la plataforma y la legislación aplicable en El Salvador.
+    </string>
+</resources>

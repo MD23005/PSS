@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitlePaso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Información personal"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nombres -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombres"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Nombres"
+        app:boxBackgroundColor="@color/lila_claro"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="#8F8F8F"
+        app:endIconMode="clear_text"
+        app:endIconTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvTitlePaso1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pedro Manolo"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nombre que aparece en su DUI"
+        android:textColor="@color/gris_texto"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilNombres" />
+
+    <!-- Apellidos -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilApellidos"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Apellidos"
+        app:boxBackgroundColor="@color/lila_claro"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="#8F8F8F"
+        app:endIconMode="clear_text"
+        app:endIconTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tilNombres">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guzman Salgero"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Apellidos que aparecen en su DUI"
+        android:textColor="@color/gris_texto"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilApellidos" />
+
+    <!-- DUI -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDui"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="DUI"
+        app:boxBackgroundColor="@color/lila_claro"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="#8F8F8F"
+        app:endIconMode="clear_text"
+        app:endIconTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tilApellidos">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12345678-9"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Número único de identidad"
+        android:textColor="@color/gris_texto"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilDui" />
+
+    <!-- Botón Adjuntar -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Subir imagen del DUI"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilDui"
+        android:drawableStart="@drawable/upload_icon"
+        android:padding="12dp"
+        android:background="@drawable/bg_button_upload"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSiguientePaso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/right_arrow"
+        app:backgroundTint="@color/lila_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

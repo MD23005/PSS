@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#E8DEF8</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MyApp.Pill</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicio de sesión"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Texto de prueba"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:id="@+id/tvRol"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_marginTop="48dp"
+            app:boxBackgroundColor="#E8E0E8"
+            app:boxStrokeColor="#6200EE"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtEmail"
+                android:text="example@gmail.com"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_marginTop="20dp"
+            app:endIconMode="password_toggle"
+            app:boxBackgroundColor="#E8E0E8"
+            app:boxStrokeColor="#6200EE"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtPass"
+                android:text="example@gmail.com"
+                android:textSize="16sp"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/chkBot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No soy un robot"/>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:drawableStart="@drawable/login_icon"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/btn_shape"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

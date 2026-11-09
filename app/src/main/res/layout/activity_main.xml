@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione un rol para acceder"
+        android:padding="25dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnComprador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_shape"
+            android:drawableStart="@drawable/shop_icon"
+            android:drawableTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:padding="12dp"
+            android:text="Comprador"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_shape"
+            android:drawableStart="@drawable/seller_icon"
+            android:drawableTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:padding="12dp"
+            android:text="Vendedor"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_shape"
+            android:drawableStart="@drawable/admin_icon"
+            android:drawableTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:padding="12dp"
+            android:text="Administración"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
