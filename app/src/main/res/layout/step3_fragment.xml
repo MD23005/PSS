@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="24dp"
+    android:paddingHorizontal="12dp"
     android:background="#FFFFFF">
 
     <TextView
@@ -98,23 +98,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:tint="#000000" />
 
-    <!-- Botón Registrar Usuario (Más ancho) -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnRegistrarUsuario"
+    <!-- Botón Siguiente (Flecha a la derecha) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSiguientePaso4"
         android:layout_width="wrap_content"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/lila_claro"
-        android:text="Registrar usuario"
-        android:textAllCaps="false"
-        android:textColor="@color/morado_texto"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:cornerRadius="16dp"
-        app:icon="@drawable/save_icon"
-        app:iconGravity="textStart"
-        app:iconTint="@color/morado_texto"
+        android:src="@drawable/right_arrow"
+        app:backgroundTint="@color/lila_claro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#000000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

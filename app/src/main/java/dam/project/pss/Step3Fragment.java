@@ -23,10 +23,20 @@ public class Step3Fragment extends Fragment {
         View view = inflater.inflate(R.layout.step3_fragment, container, false);
 
         FloatingActionButton fabAtras = view.findViewById(R.id.fabAtrasPaso3);
+        FloatingActionButton fabSiguiente = view.findViewById(R.id.fabSiguientePaso4);
+
         if (fabAtras != null) {
             fabAtras.setOnClickListener(v -> {
                 if (getParentFragment() instanceof RegisterFragment) {
                     ((RegisterFragment) getParentFragment()).navigateToStep(1);
+                }
+            });
+        }
+
+        if (fabSiguiente != null) {
+            fabSiguiente.setOnClickListener(v -> {
+                if (getParentFragment() instanceof RegisterFragment) {
+                    ((RegisterFragment) getParentFragment()).navigateToStep(3);
                 }
             });
         }

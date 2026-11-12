@@ -18,6 +18,8 @@ public class StepPagerAdapter extends FragmentStateAdapter {
                 return new Step2Fragment();
             case 2:
                 return new Step3Fragment();
+            case 3:
+                return new Step4Fragment();
             case 0:
             default:
                 return new Step1Fragment();
@@ -26,6 +28,6 @@ public class StepPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 4;
     }
 }

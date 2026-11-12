@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingHorizontal="12dp"
+    android:background="#FFFFFF">
+
+    <!-- Título Paso 4 -->
+    <TextView
+        android:id="@+id/tvTitlePaso4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Definir PIN"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Descripción Paso 4 -->
+    <TextView
+        android:id="@+id/tvDescPaso4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Este PIN funcionará para autenticarse en caso de que no tenga conexión a internet, por lo que será necesario que lo memorice, lo apunte o lo guarde en un lugar seguro."
+        android:textColor="@color/gris_texto"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitlePaso4" />
+
+    <!-- Contenedor del PIN -->
+    <LinearLayout
+        android:id="@+id/layoutPinContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvDescPaso4"
+        app:layout_constraintBottom_toTopOf="@id/btnRegistrarUsuario">
+
+        <com.andrognito.pinlockview.IndicatorDots
+            android:id="@+id/indicator_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.andrognito.pinlockview.PinLockView
+            android:id="@+id/pin_lock_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:keypadTextColor="#000000"
+            app:pinLength="4" />
+
+    </LinearLayout>
+
+    <!-- Botón Atrás (Esquina inferior izquierda) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAtrasPaso4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/left_arrow"
+        app:backgroundTint="@color/lila_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="#000000" />
+
+    <!-- Botón Registrar Usuario (Esquina inferior derecha) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegistrarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/lila_claro"
+        android:text="Registrar usuario"
+        android:textAllCaps="false"
+        android:textColor="@color/morado_texto"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/save_icon"
+        app:iconGravity="textStart"
+        app:iconTint="@color/morado_texto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

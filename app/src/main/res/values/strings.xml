@@ -93,4 +93,21 @@ Entregar la información recabada a las autoridades administrativas y judiciales
 3. Autorización de Verificación y Tratamiento
 Autorizo de manera explícita al Titular (o a los encargados del tratamiento que este designe) a procesar mis datos personales y la imagen de mi DUI con la única finalidad de validar mi identidad, verificar la coincidencia de los datos declarados y gestionar mi cuenta en la Aplicación, de conformidad con la política de privacidad de la plataforma y la legislación aplicable en El Salvador.
     </string>
+
+    <string-array name="departamentos_el_salvador">
+        <item>Ahuachapán</item>
+        <item>Cabañas</item>
+        <item>Chalatenango</item>
+        <item>Cuscatlán</item>
+        <item>La Libertad</item>
+        <item>La Paz</item>
+        <item>La Unión</item>
+        <item>Morazán</item>
+        <item>San Miguel</item>
+        <item>San Salvador</item>
+        <item>San Vicente</item>
+        <item>Santa Ana</item>
+        <item>Sonsonate</item>
+        <item>Usulután</item>
+    </string-array>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="24dp"
+    android:paddingHorizontal="12dp"
     android:background="#FFFFFF">
 
     <TextView
@@ -39,9 +39,9 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitlePaso1">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pedro Manolo"
             android:textColor="#000000"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +62,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:hint="Apellidos"
         app:boxBackgroundColor="@color/lila_claro"
         app:boxCornerRadiusTopStart="4dp"
@@ -76,9 +76,9 @@
         app:layout_constraintTop_toBottomOf="@id/tilNombres">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtApellidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Guzman Salgero"
             android:textColor="#000000"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -99,8 +99,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="DUI"
+        android:layout_marginTop="30dp"
+        android:hint="DUI: 00000000-0"
         app:boxBackgroundColor="@color/lila_claro"
         app:boxCornerRadiusTopStart="4dp"
         app:boxCornerRadiusTopEnd="4dp"
@@ -113,9 +113,9 @@
         app:layout_constraintTop_toBottomOf="@id/tilApellidos">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDui"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="12345678-9"
             android:textColor="#000000"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -130,19 +130,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilDui" />
 
-    <!-- Botón Adjuntar -->
-    <androidx.appcompat.widget.AppCompatButton
+    <!-- DUI -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Contraseña para la cuenta"
+        app:boxBackgroundColor="@color/lila_claro"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="#8F8F8F"
+        app:endIconMode="clear_text"
+        app:endIconTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tilDui">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Subir imagen del DUI"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tilDui"
-        android:drawableStart="@drawable/upload_icon"
-        android:padding="12dp"
-        android:background="@drawable/bg_button_upload"/>
+        android:layout_marginTop="4dp"
+        android:text="Contraseña para acceder a la cuenta en PSS"
+        android:textColor="@color/gris_texto"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilPass" />
+
+    <!-- Botón Adjuntar e Imagen Previa -->
+    <LinearLayout
+        android:id="@+id/layoutDuiUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tilPass">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubirDui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subir imagen del DUI"
+            android:drawableStart="@drawable/upload_icon"
+            android:padding="12dp"
+            android:background="@drawable/bg_button_upload"/>
+
+        <ImageView
+            android:id="@+id/imgDuiPreview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="Vista previa DUI" />
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabSiguientePaso2"

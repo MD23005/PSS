@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="24dp"
+    android:paddingHorizontal="12dp"
     android:background="#FFFFFF">
 
     <TextView
@@ -39,9 +39,9 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitlePaso2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="7777-7777"
             android:textColor="#000000"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -49,7 +49,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="Nombre que aparece en su DUI"
         android:textColor="@color/gris_texto"
         android:textSize="12sp"
@@ -62,7 +62,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:hint="Email"
         app:boxBackgroundColor="@color/lila_claro"
         app:boxCornerRadiusTopStart="4dp"
@@ -76,9 +76,9 @@
         app:layout_constraintTop_toBottomOf="@id/tilTelefono">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="example@example.com"
             android:textColor="#000000"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -117,9 +117,9 @@
         app:layout_constraintTop_toBottomOf="@id/tvLabelDepto">
 
         <AutoCompleteTextView
+            android:id="@+id/actvDepartamento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="San Salvador"
             android:textColor="#000000"
             android:textSize="16sp"
             android:inputType="none" />
